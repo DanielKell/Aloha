@@ -1,0 +1,114 @@
+
+<html>
+   <head> 
+      <meta charset="utf-8"> <!-- Use autoprefixer before finishing: https://autoprefixer.github.io/ -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="reset.css"> 
+      <link rel="stylesheet" href="font/font.css"> 
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="flickity.css" media="screen">
+      <script src="flickity.js"></script>
+      <title>Aloha Clothing</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script type="text/javascript" src="smooth-scroll.js"></script>
+      <script type="text/javascript" src="validate-email.js"></script>
+   </head>
+   
+   <body>
+
+    <header class="header">
+            <div class="logo">
+                <img class="logo-pic" src="images/aloha-logo.svg">
+            </div>
+        
+            <nav class="section-names"> <!-- Use position: Fixed to make it stay on top -->
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#featured">Featured</a></li>
+                    <li><a href="#updates">Updates</a></li>
+                </ul>
+            </nav>
+
+            <div class="cart">
+                <img src="images/cart-icon.svg">
+            </div>
+
+    </header>
+
+    <section class="banner">
+        <h1>New Collection</h1>
+        <h2>Spring/Summer 2017</h2>
+    </section>
+
+    <section class="info" id="about">
+        <h3>Hand-Crafted <span>Styles</span></h3>
+        <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below. </p>
+    </section>
+
+    <section class="products" id="shop">
+        <div class="mens"><span>Men's</span></div>
+        <div class="trends"><span>Trends</span></div>
+        <div class="glasses"><span>Glasses</span></div>
+        <div class="sale"><span>Sale</span></div>
+        <div class="bags"><span>Bags</span></div>
+        <div class="womens"><span>Women's</span></div>
+    </section>
+
+    <section class="features" id="featured">
+        <h4>Most-Loved <span>Products</span></h4>
+
+            <div class="carousel" data-flickity='{ "autoPlay": true }'>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+
+        </div>
+    </section>
+
+    <section class="newsletter" id="updates">
+        <div class="wrapper-container">
+            <h5>Sign-up for <span>Updates</span></h5>
+            <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
+            <form class="signup" onsubmit="return ValidateEmail(your-email)"> <!-- Cant get submit request to work -->
+                <input type ="email" name="your-email" value placeholder="Your Email" id="your-email">
+                <input type ="submit" name="subscribe" value="Subscribe" id="subscribe">
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        <div class="left-footer">
+            <div class="copyright">
+                <p>© 2017 Aloha Apparel Co.</p>
+                <p>Powered by HTML and CSS.</p>
+            </div>
+            <div class="contact">
+                <p>604-604-6040. <a href="mailto:info@alohaapparel.com">info@alohaapparel.com</a></p>
+            </div>
+            <div class="address">
+                <p>1490 W Broadway</p>
+                <p>Vancouver, BC, Canada</p>
+            </div>
+        </div>
+
+          <div class="right-footer">
+            <ul class="social">
+              <li><a href="#"/><i class="fa fa-facebook"> <span>Facebook</i> </span></a></li>
+              <li><a href="#"/><i class="fa fa-twitter"> <span> Twitter</i> </span></a></li>
+              <li><a href="#"/><i class="fa fa-instagram"> <span> Instagram<span></i></a></li>
+              <li><a href="#"/><i class="fa fa-pinterest"> <span> Pintrest</span></i></a></li>
+              <li><a href="#"/><i class="fa fa-google"> <span> Google+</span></i></a></li>
+            </ul>
+          </div>           
+
+    </footer>
+
+   </body>
+
+
+</html>
