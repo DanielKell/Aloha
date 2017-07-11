@@ -46,17 +46,15 @@
     }
 
     @media screen and (max-width: 600px) {
-        .section-names ul { 
-    border-top: 1px solid #d7d7d7;
-        }
-    }
-
-    @media screen and (max-width: 600px) {
         .section-names {
             order: 3;
             margin: 0 auto;
             padding-left: 17px;
             padding-right: 17px;
+            display: flex;
+            width: 85%;
+            border-top: 1px solid #d7d7d7;
+            justify-content: center;
         }
     }
 
@@ -120,6 +118,12 @@
         font-family: 'PlayfairDisplay-Italic';
     }
 
+    @media screen and (max-width: 600px) {
+        h3 {
+            font-size: 30px;
+        }
+    }
+
     .info h3 span {
         font-family: 'PlayfairDisplay-Bold';
         font-style: normal;
@@ -132,6 +136,13 @@
     p {
         font-family: 'Raleway-Light';
         font-size: 1.15rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        .info p {
+            font-size: 1rem;
+            padding: 0px 20px 0px 20px;
+        }
     }
 
     .products {
@@ -172,6 +183,7 @@
     .products div.mens {
         flex-basis: 49%;
         border-left: 0px;
+        margin-left: 0px;
         background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("images/mens-category.jpg") no-repeat 50%;
         background-size: cover,cover;
     }
@@ -193,7 +205,7 @@
     @media screen and (max-width: 600px) {
             .products div.trends {
                 flex-basis: 49%;
-                border-right: 5px solid white;
+                margin-right: 1%;
                 border-bottom: 8px solid white;
             }
     }
@@ -204,12 +216,13 @@
         background-size: cover,cover;
         background-repeat: no-repeat;
         border-right: 0px;
+        margin-right: 0px;
     }
 
     @media screen and (max-width: 600px) {
             .products div.glasses {
                 flex-basis: 49%;
-                border-left: 5px solid white;
+                margin-left: 1%;
                 border-bottom: 8px solid white;
             }
     }
@@ -220,12 +233,13 @@
         background-size: cover,cover;
         background-repeat: no-repeat;
         border-left: 0px;
+        margin-left: 0px;
     }
 
     @media screen and (max-width: 600px) {
             .products div.sale {
                 flex-basis: 49%;
-                border-right: 5px solid white;
+                margin-right: 1%;
                 border-bottom: 8px solid white;
             }
     }
@@ -240,17 +254,18 @@
     @media screen and (max-width: 600px) {
             .products div.bags {
                 flex-basis: 49%;
-                border-left: 5px solid white;
+                margin-left: 1%;
                 border-bottom: 8px solid white;
             }
     }
 
     .products div.womens {
         flex-basis: 49%;
-        background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("images/womens-category.jpg") no-repeat 50%;
+        background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("images/womens-category.jpg") no-repeat 50% top;
         background-size: cover,cover;
         background-repeat: no-repeat;
         border-right: 0px;
+        margin-right: 0px;
     }
 
     @media screen and (max-width: 600px) {
@@ -262,7 +277,7 @@
 
     .features {
         padding-top: 50px;
-        padding-bottom: 50px;
+        padding-bottom: 70px;
     }
 
     h4 {
@@ -307,6 +322,8 @@
         max-width: 750px;
         color: white;
         padding-top: 35px;
+        padding-left: 20px;
+        padding-right: 20px;
         text-align: center;
         margin: 0 auto;
         line-height: 2;
@@ -331,16 +348,20 @@
     input {
         border: 0;
         font-family: 'Raleway-Light';
-        font-size: 14px
+        font-size: 14px;
     }
 
-    #your-email {
+    textarea:focus, input:focus     {
+    outline: none;
+    }
+
+    #email {
         width: 100%;
         padding: 15px 20px;
         border-radius: 30px 30px 30px 30px;
     }
 
-    #subscribe {
+    #validate {
         width: 120px;
         padding: 10px 10px;
         box-sizing: border-box;
@@ -419,6 +440,24 @@
                 font-family: 'Raleway-Light';
     }
 
+    /*Lining up social media icons */
+
+    i.fa.fa-facebook span {
+        margin-left: 6px;
+    }
+
+    i.fa.fa-instagram span {
+        margin-left: 2px;
+    }
+
+    i.fa.fa-pinterest span {
+        margin-left: 2px;
+    }
+
+    i.fa.fa-google span {
+        margin-left: 2px;
+    }
+
     footer .right-footer {
     padding: 2.5rem;
     }
@@ -480,9 +519,40 @@
         }
     }
 
-/* Carousel */
+ /*Carousel */
 
-    .carousel {
+    .clothes-info {
+        text-align: center;
+    }
+
+    .clothes-info p {
+        color: gray;
+        font-family: 'Raleway-Medium';
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    .clothes-info p:nth-child(2) {
+        padding-bottom: 20px;
+    }
+
+    h6 {
+        font-family: 'PlayfairDisplay-Regular';
+        color: #e2574c;
+        font-size: 24px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    /*.carousel-cell {
+        width: 66%;
+    }*/
+
+    /*.carousel-pic {
+        width: 50%;
+    }*/
+
+    /*.carousel {
     background: #EEE;
 }
 
@@ -493,9 +563,9 @@
   background: #8C8;
   border-radius: 5px;
   counter-increment: gallery-cell;
-}
+}*/
 
-/* cell number */
+/*
 .carousel-cell:before {
   display: block;
   text-align: center;
@@ -503,9 +573,9 @@
   line-height: 200px;
   font-size: 80px;
   color: white;
-}
+}*/
 
-.carousel-pic {
+/*.carousel-pic {
       display: block;
   max-height: 100%;
   margin: 0 auto;
@@ -513,4 +583,4 @@
   opacity: 0;
   -webkit-transition: opacity 0.4s;
           transition: opacity 0.4s;
-}
+}*/

@@ -59,27 +59,87 @@
     <section class="features" id="featured">
         <h4>Most-Loved <span>Products</span></h4>
 
-            <div class="carousel" data-flickity='{ "autoPlay": true }'>
-        <div class="carousel-cell" id="red">
-            <img class="carousel-pic" src="cotton-yellow-tshirt.jpg">
-            <p>Random Text</p>
-        </div>
-        <div class="carousel-cell">
-        </div>
-        <div class="carousel-cell"></div>
-        <div class="carousel-cell"></div>
-        <div class="carousel-cell"></div>
-        <div class="carousel-cell"></div>
-        </div>
+            <div class="main-carousel" data-flickity='{ "autoPlay": true }'>
+                <div class="carousel-cell">
+                      <img class="carousel-pic" src="./images/stretch-knit-dress.jpg">
+                        <div class="clothes-info">
+                          <p> Dresses </p>
+                          <h6> Stretch Knit Dress </h6>
+                          <p> $169.00 </p>
+                      </div>
+                </div>
+             <div class="carousel-cell">
+                    <img class="carousel-pic" src="./images/cotton-blue-shirt.jpg">
+                      <div class="clothes-info">
+                          <p> Shirts </p>
+                          <h6> Cotton Blue Shirt </h6>
+                          <p> $89.00 </p>
+                      </div>
+                    </div>
+
+            <div class="carousel-cell">
+                    <img class="carousel-pic" src="./images/checked-stretch-dress.jpg">
+                      <div class="clothes-info">
+                          <p> Dresses </p>
+                          <h6> Checked Stretch Dress </h6>
+                          <p> $129.00 </p>
+                      </div>
+              </div>
+
+             <div class="carousel-cell">
+                    <img class="carousel-pic" src="./images/blue-hipster-backpack.jpg">
+                      <div class="clothes-info">
+                          <p> Bags </p>
+                          <h6> Blue Hipster Backpack </h6>
+                          <p> $69.00 </p>
+                      </div>
+                    </div>
+
+             <div class="carousel-cell">
+                    <img class="carousel-pic" src="./images/demin-overall-shorts.jpg">
+                      <div class="clothes-info">
+                          <p> Denim </p>
+                          <h6> Denim Overall Shorts </h6>
+                          <p> $89.00 </p>
+                      </div>
+                    </div>
+
+             <div class="carousel-cell">
+                    <img class="carousel-pic" src="./images/pink-dotted-dress.jpg">
+                      <div class="clothes-info">
+                          <p> Dresses </p>
+                          <h6> Pink Dotted Dress </h6>
+                          <p> $99.00 </p>
+                      </div>
+                </div>
+
+            <div class="carousel-cell">
+                    <img class="carousel-pic" src="./images/blue-silk-dress.jpg">
+                      <div class="clothes-info">
+                          <p> Dresses </p>
+                          <h6> Blue Silk Dress </h6>
+                          <p> $119.00 </p>
+                      </div>
+                </div>
+
+            <div class="carousel-cell">
+                    <img class="carousel-pic" src="./images/cotton-yellow-tshirt.jpg">
+                      <div class="clothes-info">
+                          <p> Shirts </p>
+                          <h6> Cotton Yellow Tshirt </h6>
+                          <p> $39.00 </p>
+                      </div>
+                </div>
+            </div>
     </section>
 
     <section class="newsletter" id="updates">
         <div class="wrapper-container">
             <h5>Sign-up for <span>Updates</span></h5>
             <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
-            <form class="signup" onsubmit="return ValidateEmail(your-email)"> <!-- Cant get submit request to work -->
-                <input type ="email" name="your-email" value placeholder="Your Email" id="your-email">
-                <input type ="submit" name="subscribe" value="Subscribe" id="subscribe">
+            <form class="signup" name="form1" onsubmit="return validateForm();" method="post"> <!-- Cant get submit request to work -->
+                <input type ="email" name="email" value placeholder="Your Email" id="email">
+                <input type ="submit" name="subscribe" value="Subscribe" id="validate">
             </form>
         </div>
     </section>

@@ -1,14 +1,12 @@
-function ValidateEmail(your-email)  
-    {  
-    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
-    if(your-email.value.match(mailformat))  
-     {  
-    return true;  
-      }  
-else  
-     {  
-    alert("You have entered an invalid email address!");  
-    your-email.focus();  
-    return false;  
-     }  
-    }  
+function validateForm() {
+    var x = document.forms["form1"]["email"].value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        alert("Not a valid e-mail address");
+        return false;
+    }
+    else {
+        alert("Thanks, got it!")
+    }
+}
