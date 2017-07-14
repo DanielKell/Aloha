@@ -1,13 +1,3 @@
-    /*@font-face {
-        font-family: raleway-light;
-        src: url("fonts/Raleway-Light.ttf");
-    }
-
-    @font-face {
-        font-family: playfair-display;
-        src: url("fonts/PlayfairDisplay-Regular.otf");
-    }*/
-    
     body {
         max-width: 1240px;
         width: 100%;
@@ -17,12 +7,7 @@
     header {
         display: flex;
         justify-content: space-between;
-    }
-
-    @media screen and (max-width: 600px) {
-        header {
-            flex-wrap: wrap;
-        }
+        flex-wrap: wrap;
     }
 
     .logo-pic {
@@ -32,18 +17,20 @@
 
     header nav {
         display: inline;
-        padding: 20px 0px 20px 0px;
+        padding: 0px;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (min-width: 600px) {
         header nav {
-            padding: 0px;
+        padding: 20px 0px 20px 0px;
         }
     }
 
     .section-names ul {
         display: flex;
     }
+
+   /* Need to flip the below but CAN'T */
 
     @media screen and (max-width: 600px) {
         .section-names {
@@ -57,6 +44,19 @@
             justify-content: center;
         }
     }
+
+        /*@media screen and (max-width: 600px) {
+        .section-names {
+            order: 3;
+            margin: 0 auto;
+            padding-left: 17px;
+            padding-right: 17px;
+            display: flex;
+            width: 85%;
+            border-top: 1px solid #d7d7d7;
+            justify-content: center;
+        }
+    }*/
 
     .section-names ul li {
         margin: 1rem;
@@ -114,13 +114,13 @@
         padding: 50px 0px 30px 0px;
         text-align: center;
         font-style: italic;
-        font-size: 38px;
+        font-size: 30px;
         font-family: 'PlayfairDisplay-Italic';
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (min-width: 600px) {
         h3 {
-            font-size: 30px;
+            font-size: 38px;
         }
     }
 
@@ -131,18 +131,20 @@
 
     .info p {
         line-height: 2;
+        font-size: 1rem;
+        padding: 0px 20px 0px 20px;
+    }
+
+    @media screen and (min-width: 600px) {
+        .info p {
+            font-size: 1.15rem;
+            padding: 0px;
+        }
     }
 
     p {
         font-family: 'Raleway-Light';
         font-size: 1.15rem;
-    }
-
-    @media screen and (max-width: 600px) {
-        .info p {
-            font-size: 1rem;
-            padding: 0px 20px 0px 20px;
-        }
     }
 
     .products {
@@ -155,7 +157,7 @@
     .products span {
         color: white;
         font-family: 'Raleway-Medium';
-        font-size: 35px;
+        font-size: 28.8px;
         text-transform: uppercase;
         position: absolute;
         top: 50%;
@@ -163,9 +165,9 @@
         transform: translate(-50%,-50%);
     }
 
-    @media screen and (max-width: 1240px) {
+    @media screen and (min-width: 1240px) {
         .products span {
-            font-size: 28.8px;
+            font-size: 35px;
         }
     }
 
@@ -394,6 +396,15 @@
         font-family: 'Raleway-Light';
     }
 
+       @media screen and (max-width: 600px) {
+        .footer {
+            flex-wrap: wrap;
+            max-height: none;
+            justify-content: center;
+            height: 250px;
+        }
+    }
+
     .phone a {
         color: white;
         line-height: 30px;
@@ -409,13 +420,40 @@
     line-height: 1.5;
     }
 
+    @media screen and (max-width: 600px) {
+        footer .left-footer {
+            padding-top: 20px;
+            text-align: center;
+            line-height: 0.9;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .left-footer div {
+            line-height: 24px;
+        }
+    }
+
+
     .copyright, .contact {
         padding-bottom: 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+        .copyright, .contact {
+            padding-bottom: 10px;
+        }
     }
 
     div.left-footer p {
     font-family: 'PlayfairDisplay-Regular';
     font-size: 16px;
+    }
+
+    @media screen and (max-width: 600px) {
+        div.left-footer p{
+            font-size: 14px;
+        }
     }
 
     .left-footer .address {
@@ -440,6 +478,32 @@
                 font-family: 'Raleway-Light';
     }
 
+    @media screen and (max-width: 600px) {
+        .right-footer ul li {
+            display: inline-block;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .social span {
+            display: none;
+        }
+    }
+
+    footer .right-footer {
+        padding: 2.5rem;
+    }
+    
+    @media screen and (max-width: 600px) {
+        footer .right-footer {
+            padding-left: 5rem;
+            padding-right: 5rem;
+            padding-top: 0rem;
+            padding-bottom: 0rem;
+            margin: 0rem 0rem 1.5rem 0rem;
+        }
+    }
+
     /*Lining up social media icons */
 
     i.fa.fa-facebook span {
@@ -456,67 +520,6 @@
 
     i.fa.fa-google span {
         margin-left: 2px;
-    }
-
-    footer .right-footer {
-    padding: 2.5rem;
-    }
-
-    @media screen and (max-width: 600px) {
-        .footer {
-            flex-wrap: wrap;
-            max-height: none;
-            justify-content: center;
-            height: 250px;
-        }
-    }
-
-    @media screen and (max-width: 600px) {
-        footer .left-footer {
-            padding-top: 20px;
-            text-align: center;
-            line-height: 0.9;
-        }
-    }
-
-    @media screen and (max-width: 600px) {
-        .left-footer div {
-            line-height: 24px;
-        }
-    }
-
-    @media screen and (max-width: 600px) {
-        div.left-footer p{
-            font-size: 14px;
-        }
-    }
-
-    @media screen and (max-width: 600px) {
-        .copyright, .contact {
-            padding-bottom: 10px;
-        }
-    }
-
-    @media screen and (max-width: 600px) {
-        .right-footer ul li {
-            display: inline-block;
-        }
-    }
-
-    @media screen and (max-width: 600px) {
-        .social span {
-            display: none;
-        }
-    }
-
-    @media screen and (max-width: 600px) {
-        footer .right-footer {
-            padding-left: 5rem;
-            padding-right: 5rem;
-            padding-top: 0rem;
-            padding-bottom: 0rem;
-            margin: 0rem 0rem 1.5rem 0rem;
-        }
     }
 
  /*Carousel */
