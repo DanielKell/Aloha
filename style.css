@@ -332,6 +332,13 @@
         font-style: italic;
     }
 
+        /* Added visibility for this section for devices under 500px */
+    @media screen and (max-width: 500px) {
+        .newsletter h5 {
+            padding-top: 30px;
+        }
+    }
+
     .newsletter h5 span {
         font-family: 'PlayfairDisplay-Bold';
         font-style: normal;
@@ -346,6 +353,13 @@
         text-align: center;
         margin: 0 auto;
         line-height: 2;
+    }
+
+    /* Added visibility for this section for devices under 500px */
+    @media screen and (max-width: 500px) {
+        .newsletter p {
+            font-size: 17px;
+        }
     }
 
     .info p {
