@@ -1,3 +1,7 @@
+    * {
+        box-sizing: border-box;
+    }
+    
     body {
         max-width: 1240px;
         width: 100%;
@@ -20,7 +24,7 @@
         padding: 0px;
     }
 
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 601px) {
         header nav {
         padding: 20px 0px 20px 0px;
         }
@@ -72,7 +76,7 @@
     }
 
     .cart img {
-        height: 50px;
+        height: 80px;
         padding: 20px 20px 10px 0px;
     }
 
@@ -150,7 +154,7 @@
     .products {
         display: flex;
         flex-wrap: wrap;
-        height: 500px;
+        /*height: 500px;*/
         /*padding: 5px;*/
     }
 
@@ -183,7 +187,7 @@
     }
 
     .products div.mens {
-        flex-basis: 49%;
+        flex-basis: 50%;
         border-left: 0px;
         margin-left: 0px;
         background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("images/mens-category.jpg") no-repeat 50%;
@@ -198,7 +202,7 @@
     }
 
     .products div.trends {
-        flex-basis: 24%;
+        flex-basis: 25%;
         background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("images/trends-category.jpg") no-repeat 50%;
         background-size: cover,cover;
         background-repeat: no-repeat;
@@ -213,7 +217,7 @@
     }
 
     .products div.glasses {
-        flex-basis: 24%;
+        flex-basis: 25%;
         background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("images/glasses-category.jpg") no-repeat 50%;
         background-size: cover,cover;
         background-repeat: no-repeat;
@@ -230,7 +234,7 @@
     }
 
     .products div.sale {
-        flex-basis: 24%;
+        flex-basis: 25%;
         background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("images/sale-category.jpg") no-repeat 50%;
         background-size: cover,cover;
         background-repeat: no-repeat;
@@ -247,7 +251,7 @@
     }
 
     .products div.bags {
-        flex-basis: 24%;
+        flex-basis: 25%;
         background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("images/bags-category.jpg") no-repeat 50%;
         background-size: cover,cover;
         background-repeat: no-repeat;
@@ -262,7 +266,7 @@
     }
 
     .products div.womens {
-        flex-basis: 49%;
+        flex-basis: 50%;
         background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("images/womens-category.jpg") no-repeat 50% top;
         background-size: cover,cover;
         background-repeat: no-repeat;
@@ -275,6 +279,19 @@
                 flex-basis: 100%;
                 border: 0px 0px 0px 0px;
             }
+    }
+
+    /* These two steps were the only way I could figure out how to resize the boxes */
+    .small-item:before {
+        padding-top: 100%;
+        content: '';
+        display:block;
+    }
+
+    .big-item:before {
+        padding-top: 50%;
+        content: '';
+        display:block;
     }
 
     .features {
