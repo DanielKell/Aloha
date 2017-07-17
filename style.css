@@ -13,9 +13,25 @@
         flex-wrap: wrap;
     }
 
+    @media screen and (min-width: 1240px) {
+        header {
+        width: 1240px;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+        }
+    }
+
     .logo-pic {
-        max-width: 120px;
+        max-width: 140px;
         padding: 20px 0px 20px 20px;
+    }
+
+    @media screen and (min-width: 1240px) {
+        .logo-pic {
+        max-width: 180px;
+        padding-top: 20px;
+        }
     }
 
     header nav {
@@ -52,14 +68,6 @@
         }
     }
 
-        @media screen and (min-width: 600px) {
-        .section-names {
-            order: 2;
-            width: 50%;
-            border-top: none;
-        }
-    }
-
     @media screen and (min-width: 600px) {
             .header {
                 order: 1;
@@ -80,6 +88,13 @@
         font-size: 14.4px;
     }
 
+    @media screen and (min-width: 1240px) {
+        .section-names ul li {
+            font-size: 16px;
+            margin: 1.5rem;
+        }
+    }
+
     a {
         text-decoration: none;
         color: #e2574c;
@@ -90,10 +105,23 @@
         padding: 20px 20px 10px 0px;
     }
 
+    @media screen and (min-width: 1240px) {
+            .cart img {
+                height: 90px;
+            }
+    }
+
     .banner {
         background: linear-gradient(rgba(0, 0, 0, 0.25) 0px, rgba(0, 0, 0, 0.25)), url("images/banner-girl.png") no-repeat center bottom, url("images/flower-bkgd.jpg") repeat-x;
         height: 400px;
         background-size: cover, 140px;
+    }
+
+    @media screen and (min-width: 1240px) {
+        .banner {
+            height: 550px;
+            background-size: cover, 200px 475px, contain;
+        }
     }
 
     h1, h2, h3, h4, h5 {
@@ -107,18 +135,30 @@
         font-size: 20px;
         text-align: center;
         padding: 140px 0px 0px 0px;
-        text-shadow: 1px 2px 2px #000000;
+        text-shadow: 1px 2px 2px gray;
         text-transform: uppercase;
-        font-family: 'PlayfairDisplay-Bold';
+        font-family: 'Raleway-Medium';
     }
+
+        @media screen and (min-width: 1240px) {
+            h1 {
+                padding-top: 200px;
+            }
+        }
 
     h2 {
         color: white;
         font-size: 48px;
         text-align: center;
         padding: 25px 0px 100px 0px;
-        text-shadow: 1px 2px 2px #000000;
+        text-shadow: 1px 2px 2px gray;
     }
+
+        @media screen and (min-width: 1240px) {
+            h2 {
+                font-size: 60px;
+            }
+        }
 
     info {
         height: 300px;
@@ -505,7 +545,7 @@
     }
 
     .right-footer ul li{
-        padding: 5px;
+        padding: 8px;
     }
 
     .right-footer a {
@@ -535,13 +575,6 @@
 
     footer .right-footer {
         padding: 0rem 5rem 0rem 5rem;
-        margin: 0rem 0rem 1.5rem 0rem;
-    }
-    
-    @media screen and (min-width: 600px) {
-        footer .right-footer {
-            padding: 2.5rem;
-        }
     }
 
     /*Lining up social media icons */
