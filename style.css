@@ -3,7 +3,6 @@
     }
     
     body {
-        max-width: 1240px;
         width: 100%;
         margin: auto;
     }
@@ -24,7 +23,7 @@
         padding: 0px;
     }
 
-    @media screen and (min-width: 601px) {
+    @media screen and (min-width: 600px) {
         header nav {
         padding: 20px 0px 20px 0px;
         }
@@ -34,10 +33,7 @@
         display: flex;
     }
 
-   /* Need to flip the below but CAN'T */
-
-    @media screen and (max-width: 600px) {
-        .section-names {
+    .section-names {
             order: 3;
             margin: 0 auto;
             padding-left: 17px;
@@ -46,21 +42,35 @@
             width: 85%;
             border-top: 1px solid #d7d7d7;
             justify-content: center;
+        }
+
+    @media screen and (min-width: 600px) {
+        .section-names {
+            order: 2;
+            width: 50%;
+            border-top: none;
         }
     }
 
-        /*@media screen and (max-width: 600px) {
+        @media screen and (min-width: 600px) {
         .section-names {
-            order: 3;
-            margin: 0 auto;
-            padding-left: 17px;
-            padding-right: 17px;
-            display: flex;
-            width: 85%;
-            border-top: 1px solid #d7d7d7;
-            justify-content: center;
+            order: 2;
+            width: 50%;
+            border-top: none;
         }
-    }*/
+    }
+
+    @media screen and (min-width: 600px) {
+            .header {
+                order: 1;
+            }
+        }
+
+    @media screen and (min-width: 600px) {
+            .cart {
+                order: 3;
+            }
+        }
 
     .section-names ul li {
         margin: 1rem;
@@ -299,7 +309,7 @@
 
     .features {
         padding-top: 50px;
-        padding-bottom: 70px;
+        padding-bottom: 100px;
     }
 
     h4 {
@@ -420,7 +430,6 @@
     .footer {
         background-color: #242424;
         height: 250px;
-        max-width: 1240px;
         display: flex;
         align-items: center;
         font-size: 16px;
