@@ -6,7 +6,14 @@
         width: 100%;
         margin: auto;
     }
+
+    p {
+        font-family: 'Raleway-Light';
+        font-size: 1.15rem;
+    }
     
+    /*Header Section */
+
     header {
         display: flex;
         justify-content: space-between;
@@ -19,7 +26,6 @@
 
     @media screen and (min-width: 1240px) {
         header {
-        /*width: 1240px;*/
         justify-content: center;
         margin-right: auto;
         margin-left: auto;
@@ -113,6 +119,8 @@
             }
     }
 
+    /*Banner and Overlay Text*/
+
     .banner {
         background: linear-gradient(rgba(0, 0, 0, 0.25) 0px, rgba(0, 0, 0, 0.25)), url("images/banner-girl.png") no-repeat center bottom, url("images/flower-bkgd.jpg") repeat-x;
         height: 500px;
@@ -162,6 +170,8 @@
             }
         }
 
+    /*Info section*/
+
     info {
         height: 300px;
     }
@@ -198,16 +208,11 @@
         }
     }
 
-    p {
-        font-family: 'Raleway-Light';
-        font-size: 1.15rem;
-    }
+    /*Product Section*/
 
     .products {
         display: flex;
         flex-wrap: wrap;
-        /*height: 500px;*/
-        /*padding: 5px;*/
     }
 
     .products span {
@@ -240,6 +245,8 @@
         position: relative;
         border: none;
     }
+
+    /*Product Boxes*/
 
     .products div.mens {
         flex-basis: 100%;
@@ -339,13 +346,13 @@
             }
     }
 
-        @media screen and (min-width: 600px) {
+    @media screen and (min-width: 600px) {
         .products div {
             border: 4px solid white;
         }
     }
 
-    /* These two steps were the only way I could figure out how to resize the boxes */
+    /* These two steps were the only way I could figure out how to resize the boxes correctly */
     .small-item:before {
         padding-top: 100%;
         content: '';
@@ -380,6 +387,33 @@
         margin: 0 auto;
     }
 
+    /*Carousel Settings */
+
+    .clothes-info {
+        text-align: center;
+    }
+
+    .clothes-info p {
+        color: gray;
+        font-family: 'Raleway-Medium';
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    .clothes-info p:nth-child(2) {
+        padding-bottom: 20px;
+    }
+
+    h6 {
+        font-family: 'PlayfairDisplay-Regular';
+        color: #e2574c;
+        font-size: 24px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    /*Newsletter Section*/
+
     .newsletter {
         height: 350px;
         background: linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)),url("images/wave-bkgd.jpg") no-repeat bottom;
@@ -396,7 +430,7 @@
         font-style: italic;
     }
 
-        /* Added visibility for this section for devices under 500px */
+    /* Added visibility for this section for devices under 500px */
     @media screen and (max-width: 500px) {
         .newsletter h5 {
             padding-top: 30px;
@@ -448,7 +482,7 @@
         font-size: 14px;
     }
 
-    textarea:focus, input:focus     {
+    textarea:focus, input:focus  {
     outline: none;
     }
 
@@ -472,11 +506,7 @@
         font-family: 'Raleway-Medium';
     }
 
-    /*input[type=submit] {
-        position: absolute;
-        right: .25rem;
-        top: .25rem;
-    }*/
+    /*Footer Section*/
 
     .footer {
         background-color: #242424;
@@ -490,7 +520,7 @@
         justify-content: center;
     }
 
-       @media screen and (min-width: 600px) {
+    @media screen and (min-width: 600px) {
         .footer {
         justify-content: space-between;
         flex-flow: row; 
@@ -501,6 +531,8 @@
         color: white;
         line-height: 30px;
     }
+
+    /*Left Half of Footer*/
 
     footer .left-footer {
     padding-left: 2rem;
@@ -559,6 +591,8 @@
         color: #e2574c;
     }
 
+    /*Right Half of Footer*/
+
     .right-footer ul li{
         padding: 8px;
     }
@@ -593,7 +627,7 @@
     }
 
     footer .right-footer {
-        padding: 0rem 5rem 0rem 5rem;
+        padding: 0rem 3rem 0rem 3rem;
     }
 
     /*Lining up social media icons */
@@ -614,68 +648,4 @@
         margin-left: 2px;
     }
 
- /*Carousel */
-
-    .clothes-info {
-        text-align: center;
-    }
-
-    .clothes-info p {
-        color: gray;
-        font-family: 'Raleway-Medium';
-        font-size: 14px;
-        text-transform: uppercase;
-    }
-
-    .clothes-info p:nth-child(2) {
-        padding-bottom: 20px;
-    }
-
-    h6 {
-        font-family: 'PlayfairDisplay-Regular';
-        color: #e2574c;
-        font-size: 24px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    /*.carousel-cell {
-        width: 66%;
-    }*/
-
-    /*.carousel-pic {
-        width: 50%;
-    }*/
-
-    /*.carousel {
-    background: #EEE;
-}
-
-.carousel-cell {
-  width: 66%;
-  height: 200px;
-  margin-right: 10px;
-  background: #8C8;
-  border-radius: 5px;
-  counter-increment: gallery-cell;
-}*/
-
-
-/*.carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(gallery-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
-}*/
-
-/*.carousel-pic {
-      display: block;
-  max-height: 100%;
-  margin: 0 auto;
-  max-width: 100%;
-  opacity: 0;
-  -webkit-transition: opacity 0.4s;
-          transition: opacity 0.4s;
-}*/
+    /*Media settings for devices between 600px and 1240px*/
