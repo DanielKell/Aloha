@@ -11,11 +11,15 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        z-index: 2;
     }
 
     @media screen and (min-width: 1240px) {
         header {
-        width: 1240px;
+        /*width: 1240px;*/
         justify-content: center;
         margin-right: auto;
         margin-left: auto;
@@ -24,13 +28,13 @@
 
     .logo-pic {
         max-width: 140px;
-        padding: 20px 0px 20px 20px;
+        padding: 15px 0px 10px 20px;
     }
 
     @media screen and (min-width: 1240px) {
         .logo-pic {
         max-width: 180px;
-        padding-top: 20px;
+        padding-top: 15px;
         }
     }
 
@@ -41,7 +45,7 @@
 
     @media screen and (min-width: 600px) {
         header nav {
-        padding: 20px 0px 20px 0px;
+        padding: 15px 0px 10px 0px;
         }
     }
 
@@ -52,8 +56,6 @@
     .section-names {
             order: 3;
             margin: 0 auto;
-            padding-left: 17px;
-            padding-right: 17px;
             display: flex;
             width: 85%;
             border-top: 1px solid #d7d7d7;
@@ -101,8 +103,8 @@
     }
 
     .cart img {
-        height: 80px;
-        padding: 20px 20px 10px 0px;
+        height: 75px;
+        padding: 15px 20px 10px 0px;
     }
 
     @media screen and (min-width: 1240px) {
@@ -113,13 +115,13 @@
 
     .banner {
         background: linear-gradient(rgba(0, 0, 0, 0.25) 0px, rgba(0, 0, 0, 0.25)), url("images/banner-girl.png") no-repeat center bottom, url("images/flower-bkgd.jpg") repeat-x;
-        height: 400px;
+        height: 500px;
         background-size: cover, 140px;
     }
 
     @media screen and (min-width: 1240px) {
         .banner {
-            height: 550px;
+            height: 650px;
             background-size: cover, 200px 475px, contain;
         }
     }
@@ -134,7 +136,7 @@
         color: white;
         font-size: 20px;
         text-align: center;
-        padding: 140px 0px 0px 0px;
+        padding: 240px 0px 0px 0px;
         text-shadow: 1px 2px 2px gray;
         text-transform: uppercase;
         font-family: 'Raleway-Medium';
@@ -142,7 +144,7 @@
 
         @media screen and (min-width: 1240px) {
             h1 {
-                padding-top: 200px;
+                padding-top: 300px;
             }
         }
 
@@ -223,6 +225,15 @@
         .products span {
             font-size: 35px;
         }
+    }
+
+    .products div span a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .products div span a:hover {
+        color: lightyellow;
     }
 
     .products div {
@@ -544,12 +555,20 @@
         text-decoration: underline;
     }
 
+    .contact a:hover {
+        color: #e2574c;
+    }
+
     .right-footer ul li{
         padding: 8px;
     }
 
     .right-footer a {
         color: white;
+    }
+
+    .right-footer a:hover {
+        color: #e2574c;
     }
 
     .right-footer ul span {
