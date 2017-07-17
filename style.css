@@ -166,13 +166,19 @@
 
     h1 {
         color: white;
-        font-size: 20px;
+        font-size: 18px;
         text-align: center;
-        padding: 240px 0px 0px 0px;
+        padding: 250px 0px 0px 0px;
         text-shadow: 1px 2px 2px gray;
         text-transform: uppercase;
         font-family: 'Raleway-Medium';
     }
+
+        @media screen and (min-width: 600px) {
+            h2 {
+                font-size: 20px;
+            }
+        }
 
         @media screen and (min-width: 1240px) {
             h1 {
@@ -182,11 +188,17 @@
 
     h2 {
         color: white;
-        font-size: 48px;
+        font-size: 38px;
         text-align: center;
         padding: 25px 0px 100px 0px;
         text-shadow: 1px 2px 2px gray;
     }
+
+        @media screen and (min-width: 600px) {
+            h2 {
+                font-size: 48px;
+            }
+        }
 
         @media screen and (min-width: 1240px) {
             h2 {
@@ -490,6 +502,7 @@
         text-align: center;
         padding-top: 60px;
         font-style: italic;
+        text-shadow: 1px 2px 2px gray;
     }
 
     /* Added visibility for this section for devices under 500px */
@@ -513,12 +526,19 @@
         text-align: center;
         margin: 0 auto;
         line-height: 2;
+        font-size: 16px;
     }
 
     /* Added visibility for this section for devices under 500px */
     @media screen and (max-width: 500px) {
         .newsletter p {
-            font-size: 17px;
+            font-size: 15px;
+        }
+    }
+
+    @media screen and (min-width: 600px) {
+        .newsletter p {
+            font-size: 18px;
         }
     }
 
