@@ -176,109 +176,112 @@
     }
 
     .products div {
-        border: 4px solid white;
         position: relative;
-    }
-
-    @media screen and (max-width: 600px) {
-        .products div {
-            border: none;
-        }
+        border: none;
     }
 
     .products div.mens {
-        flex-basis: 50%;
+        flex-basis: 100%;
         border-left: 0px;
         margin-left: 0px;
         background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("images/mens-category.jpg") no-repeat 50%;
         background-size: cover,cover;
+        border-bottom: 8px solid white;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (min-width: 600px) {
             .products div.mens {
-                flex-basis: 100%;
-                border-bottom: 8px solid white;
+                flex-basis: 50%;
+                border-bottom: 4px solid white;
             }
     }
 
     .products div.trends {
-        flex-basis: 25%;
+        flex-basis: 50%;
         background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("images/trends-category.jpg") no-repeat 50%;
         background-size: cover,cover;
         background-repeat: no-repeat;
+        border-right: 4px solid white;
+        border-bottom: 8px solid white;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (min-width: 600px) {
             .products div.trends {
-                flex-basis: 49%;
-                margin-right: 1%;
-                border-bottom: 8px solid white;
+                flex-basis: 25%;
+                border-bottom: 4px solid white;
             }
     }
 
     .products div.glasses {
-        flex-basis: 25%;
+        flex-basis: 50%;
         background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("images/glasses-category.jpg") no-repeat 50%;
         background-size: cover,cover;
         background-repeat: no-repeat;
         border-right: 0px;
         margin-right: 0px;
+        border-left: 4px solid white;
+        border-bottom: 8px solid white;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (min-width: 600px) {
             .products div.glasses {
-                flex-basis: 49%;
-                margin-left: 1%;
-                border-bottom: 8px solid white;
+                flex-basis: 25%;
+                border-bottom: 4px solid white;
             }
     }
 
     .products div.sale {
-        flex-basis: 25%;
+        flex-basis: 50%;
         background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("images/sale-category.jpg") no-repeat 50%;
         background-size: cover,cover;
         background-repeat: no-repeat;
         border-left: 0px;
         margin-left: 0px;
+        border-right: 4px solid white;
+        border-bottom: 8px solid white;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (min-width: 600px) {
             .products div.sale {
-                flex-basis: 49%;
-                margin-right: 1%;
-                border-bottom: 8px solid white;
+                flex-basis: 25%;
             }
     }
 
     .products div.bags {
-        flex-basis: 25%;
+        flex-basis: 50%;
         background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("images/bags-category.jpg") no-repeat 50%;
         background-size: cover,cover;
         background-repeat: no-repeat;
+        border-left: 4px solid white;
+        border-bottom: 8px solid white;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (min-width: 600px) {
             .products div.bags {
-                flex-basis: 49%;
-                margin-left: 1%;
-                border-bottom: 8px solid white;
+                flex-basis: 25%;
             }
     }
 
     .products div.womens {
-        flex-basis: 50%;
+        flex-basis: 100%;
         background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("images/womens-category.jpg") no-repeat 50% top;
         background-size: cover,cover;
         background-repeat: no-repeat;
-        border-right: 0px;
-        margin-right: 0px;
+        border-bottom: 8px solid white;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (min-width: 600px) {
             .products div.womens {
-                flex-basis: 100%;
-                border: 0px 0px 0px 0px;
+                flex-basis: 50%;
+                border-right: 0px;
+                margin-right: 0px;
             }
+    }
+
+        @media screen and (min-width: 600px) {
+        .products div {
+            border: 4px solid white;
+        }
     }
 
     /* These two steps were the only way I could figure out how to resize the boxes */
@@ -419,20 +422,18 @@
         height: 250px;
         max-width: 1240px;
         display: flex;
-        justify-content: space-between;
         align-items: center;
         font-size: 16px;
         color: white;
-        flex-flow: row; 
         font-family: 'Raleway-Light';
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-       @media screen and (max-width: 600px) {
+       @media screen and (min-width: 600px) {
         .footer {
-            flex-wrap: wrap;
-            max-height: none;
-            justify-content: center;
-            height: 250px;
+        justify-content: space-between;
+        flex-flow: row; 
         }
     }
 
@@ -442,48 +443,46 @@
     }
 
     footer .left-footer {
-    padding-top: 1rem;
     padding-left: 2rem;
     display: flex;
     flex-direction: column;
     margin: 3px;
     padding-right: 2.8rem;
-    line-height: 1.5;
+    padding-top: 20px;
+    text-align: center;
+    line-height: 0.9;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (min-width: 600px) {
         footer .left-footer {
-            padding-top: 20px;
-            text-align: center;
-            line-height: 0.9;
+            padding-top: 1rem;
+            text-align: left;
+            line-height: 1.5;
         }
     }
 
-    @media screen and (max-width: 600px) {
-        .left-footer div {
+    .left-footer div {
             line-height: 24px;
-        }
     }
-
 
     .copyright, .contact {
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (min-width: 600px) {
         .copyright, .contact {
-            padding-bottom: 10px;
+            padding-bottom: 20px;
         }
     }
 
     div.left-footer p {
-    font-family: 'PlayfairDisplay-Regular';
-    font-size: 16px;
+        font-family: 'PlayfairDisplay-Regular';
+        font-size: 14px;
     }
 
-    @media screen and (max-width: 600px) {
-        div.left-footer p{
-            font-size: 14px;
+    @media screen and (min-width: 600px) {
+        div.left-footer p {
+            font-size: 16px;
         }
     }
 
@@ -509,29 +508,30 @@
                 font-family: 'Raleway-Light';
     }
 
-    @media screen and (max-width: 600px) {
+    .right-footer ul li {
+        display: inline-block;
+    }
+
+    @media screen and (min-width: 600px) {
         .right-footer ul li {
-            display: inline-block;
+            display: block;
         }
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 599px) {
         .social span {
             display: none;
         }
     }
 
     footer .right-footer {
-        padding: 2.5rem;
+        padding: 0rem 5rem 0rem 5rem;
+        margin: 0rem 0rem 1.5rem 0rem;
     }
     
-    @media screen and (max-width: 600px) {
+    @media screen and (min-width: 600px) {
         footer .right-footer {
-            padding-left: 5rem;
-            padding-right: 5rem;
-            padding-top: 0rem;
-            padding-bottom: 0rem;
-            margin: 0rem 0rem 1.5rem 0rem;
+            padding: 2.5rem;
         }
     }
 
@@ -599,8 +599,8 @@
   counter-increment: gallery-cell;
 }*/
 
-/*
-.carousel-cell:before {
+
+/*.carousel-cell:before {
   display: block;
   text-align: center;
   content: counter(gallery-cell);
