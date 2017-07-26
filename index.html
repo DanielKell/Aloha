@@ -1,4 +1,5 @@
 
+<!DOCTYPE html>
 <html>
    <head> 
       <meta charset="utf-8"> <!-- Use autoprefixer before finishing: https://autoprefixer.github.io/ -->
@@ -14,9 +15,11 @@
    
    <body>
 
+    <a class="screen-reader-text" href="#about">Skip to the about section</a>
+
     <header class="header">
             <div class="logo">
-                <img class="logo-pic" src="images/aloha-logo.svg">
+                <img class="logo-pic" alt="Aloha brand logo" src="images/aloha-logo.svg">
             </div>
         
             <nav class="section-names"> 
@@ -29,7 +32,7 @@
             </nav>
 
             <div class="cart">
-                <a href="#"><img src="images/cart-icon.svg"></a>
+                <a href="#"><img src="images/cart-icon.svg" alt="Cart image"></a>
             </div>
      </header>
 
@@ -38,7 +41,7 @@
         <h2>Spring/Summer 2017</h2>
     </section>
 
-    <section class="info" id="about">
+    <section class="info" id="about" tabindex="-1">
         <h3>Hand-Crafted <span>Styles</span></h3>
         <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below. </p>
     </section>
@@ -169,6 +172,7 @@
       <script type="text/javascript" src="JS/smooth-scroll.js"></script>
       <script type="text/javascript" src="JS/validate-email.js"></script>
       <script src="JS/JQueryFlickity.js"></script>
+      <script src="JS/tota11y.min.js"></script>
    </body>
 
 
