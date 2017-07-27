@@ -588,13 +588,13 @@
     outline: none;
     }
 
-    #email {
+    .email {
         width: 100%;
         padding: 15px 20px;
         border-radius: 30px 30px 30px 30px;
     }
 
-    #validate {
+    .validate {
         width: 120px;
         padding: 10px 10px;
         -webkit-box-sizing: border-box;
