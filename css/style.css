@@ -164,9 +164,9 @@
     /*Banner and Overlay Text*/
 
     .banner {
-        background: -webkit-linear-gradient(rgba(0, 0, 0, 0.25) 0px, rgba(0, 0, 0, 0.25)), url("images/banner-girl.png") no-repeat center bottom, url("images/flower-bkgd.jpg") repeat-x;
-        background: -o-linear-gradient(rgba(0, 0, 0, 0.25) 0px, rgba(0, 0, 0, 0.25)), url("images/banner-girl.png") no-repeat center bottom, url("images/flower-bkgd.jpg") repeat-x;
-        background: linear-gradient(rgba(0, 0, 0, 0.25) 0px, rgba(0, 0, 0, 0.25)), url("images/banner-girl.png") no-repeat center bottom, url("images/flower-bkgd.jpg") repeat-x;
+        background: -webkit-linear-gradient(rgba(0, 0, 0, 0.25) 0px, rgba(0, 0, 0, 0.25)), url("../images/banner-girl.png") no-repeat center bottom, url("../images/flower-bkgd.jpg") repeat-x;
+        background: -o-linear-gradient(rgba(0, 0, 0, 0.25) 0px, rgba(0, 0, 0, 0.25)), url("../images/banner-girl.png") no-repeat center bottom, url("../images/flower-bkgd.jpg") repeat-x;
+        background: linear-gradient(rgba(0, 0, 0, 0.25) 0px, rgba(0, 0, 0, 0.25)), url("../images/banner-girl.png") no-repeat center bottom, url("../images/flower-bkgd.jpg") repeat-x;
         height: 500px;
         background-size: cover, 140px;
     }
@@ -314,10 +314,10 @@
             flex-basis: 100%;
         border-left: 0px;
         margin-left: 0px;
-        background: -webkit-gradient(linear,left top, left bottom,color-stop(0, rgba(0,0,0,.25)),to(rgba(0,0,0,.25))),url("images/mens-category.jpg") no-repeat 50%;
-        background: -webkit-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("images/mens-category.jpg") no-repeat 50%;
-        background: -o-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("images/mens-category.jpg") no-repeat 50%;
-        background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("images/mens-category.jpg") no-repeat 50%;
+        background: -webkit-gradient(linear,left top, left bottom,color-stop(0, rgba(0,0,0,.25)),to(rgba(0,0,0,.25))),url("../images/mens-category.jpg") no-repeat 50%;
+        background: -webkit-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/mens-category.jpg") no-repeat 50%;
+        background: -o-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/mens-category.jpg") no-repeat 50%;
+        background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/mens-category.jpg") no-repeat 50%;
         background-size: cover,cover;
         border-bottom: 8px solid white;
     }
@@ -333,10 +333,10 @@
     .products div.trends {
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%;
-        background: -webkit-gradient(linear,left top, left bottom,color-stop(0, rgba(0,0,0,.25)),to(rgba(0,0,0,.25))),url("images/trends-category.jpg") no-repeat 50%;
-        background: -webkit-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("images/trends-category.jpg") no-repeat 50%;
-        background: -o-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("images/trends-category.jpg") no-repeat 50%;
-        background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("images/trends-category.jpg") no-repeat 50%;
+        background: -webkit-gradient(linear,left top, left bottom,color-stop(0, rgba(0,0,0,.25)),to(rgba(0,0,0,.25))),url("../images/trends-category.jpg") no-repeat 50%;
+        background: -webkit-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/trends-category.jpg") no-repeat 50%;
+        background: -o-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/trends-category.jpg") no-repeat 50%;
+        background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/trends-category.jpg") no-repeat 50%;
         background-size: cover,cover;
         background-repeat: no-repeat;
         border-right: 4px solid white;
@@ -354,10 +354,10 @@
     .products div.glasses {
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%;
-        background: -webkit-gradient(linear,left top, left bottom,color-stop(0, rgba(0,0,0,.25)),to(rgba(0,0,0,.25))),url("images/glasses-category.jpg") no-repeat 50%;
-        background: -webkit-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("images/glasses-category.jpg") no-repeat 50%;
-        background: -o-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("images/glasses-category.jpg") no-repeat 50%;
-        background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("images/glasses-category.jpg") no-repeat 50%;
+        background: -webkit-gradient(linear,left top, left bottom,color-stop(0, rgba(0,0,0,.25)),to(rgba(0,0,0,.25))),url("../images/glasses-category.jpg") no-repeat 50%;
+        background: -webkit-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/glasses-category.jpg") no-repeat 50%;
+        background: -o-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/glasses-category.jpg") no-repeat 50%;
+        background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/glasses-category.jpg") no-repeat 50%;
         background-size: cover,cover;
         background-repeat: no-repeat;
         border-right: 0px;
@@ -377,10 +377,10 @@
     .products div.sale {
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%;
-        background: -webkit-gradient(linear,left top, left bottom,color-stop(0, rgba(0,0,0,.25)),to(rgba(0,0,0,.25))),url("images/sale-category.jpg") no-repeat 50%;
-        background: -webkit-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("images/sale-category.jpg") no-repeat 50%;
-        background: -o-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("images/sale-category.jpg") no-repeat 50%;
-        background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("images/sale-category.jpg") no-repeat 50%;
+        background: -webkit-gradient(linear,left top, left bottom,color-stop(0, rgba(0,0,0,.25)),to(rgba(0,0,0,.25))),url("../images/sale-category.jpg") no-repeat 50%;
+        background: -webkit-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/sale-category.jpg") no-repeat 50%;
+        background: -o-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/sale-category.jpg") no-repeat 50%;
+        background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/sale-category.jpg") no-repeat 50%;
         background-size: cover,cover;
         background-repeat: no-repeat;
         border-left: 0px;
@@ -399,10 +399,10 @@
     .products div.bags {
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%;
-        background: -webkit-gradient(linear,left top, left bottom,color-stop(0, rgba(0,0,0,.25)),to(rgba(0,0,0,.25))),url("images/bags-category.jpg") no-repeat 50%;
-        background: -webkit-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("images/bags-category.jpg") no-repeat 50%;
-        background: -o-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("images/bags-category.jpg") no-repeat 50%;
-        background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("images/bags-category.jpg") no-repeat 50%;
+        background: -webkit-gradient(linear,left top, left bottom,color-stop(0, rgba(0,0,0,.25)),to(rgba(0,0,0,.25))),url("../images/bags-category.jpg") no-repeat 50%;
+        background: -webkit-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/bags-category.jpg") no-repeat 50%;
+        background: -o-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/bags-category.jpg") no-repeat 50%;
+        background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/bags-category.jpg") no-repeat 50%;
         background-size: cover,cover;
         background-repeat: no-repeat;
         border-left: 4px solid white;
@@ -419,10 +419,10 @@
     .products div.womens {
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
-        background: -webkit-gradient(linear,left top, left bottom,color-stop(0, rgba(0,0,0,.25)),to(rgba(0,0,0,.25))),url("images/womens-category.jpg") no-repeat 50% top;
-        background: -webkit-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("images/womens-category.jpg") no-repeat 50% top;
-        background: -o-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("images/womens-category.jpg") no-repeat 50% top;
-        background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("images/womens-category.jpg") no-repeat 50% top;
+        background: -webkit-gradient(linear,left top, left bottom,color-stop(0, rgba(0,0,0,.25)),to(rgba(0,0,0,.25))),url("../images/womens-category.jpg") no-repeat 50% top;
+        background: -webkit-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/womens-category.jpg") no-repeat 50% top;
+        background: -o-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/womens-category.jpg") no-repeat 50% top;
+        background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/womens-category.jpg") no-repeat 50% top;
         background-size: cover,cover;
         background-repeat: no-repeat;
         border-bottom: 8px solid white;
@@ -507,10 +507,10 @@
 
     .newsletter {
         height: 350px;
-        background: -webkit-gradient(linear,left top, left bottom,color-stop(0, rgba(0,0,0,.15)),to(rgba(0,0,0,.15))),url("images/wave-bkgd.jpg") no-repeat bottom;
-        background: -webkit-linear-gradient(top,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)),url("images/wave-bkgd.jpg") no-repeat bottom;
-        background: -o-linear-gradient(top,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)),url("images/wave-bkgd.jpg") no-repeat bottom;
-        background: linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)),url("images/wave-bkgd.jpg") no-repeat bottom;
+        background: -webkit-gradient(linear,left top, left bottom,color-stop(0, rgba(0,0,0,.15)),to(rgba(0,0,0,.15))),url("../images/wave-bkgd.jpg") no-repeat bottom;
+        background: -webkit-linear-gradient(top,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)),url("../images/wave-bkgd.jpg") no-repeat bottom;
+        background: -o-linear-gradient(top,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)),url("../images/wave-bkgd.jpg") no-repeat bottom;
+        background: linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)),url("../images/wave-bkgd.jpg") no-repeat bottom;
         background-position: bottom;
         background-repeat: no-repeat;
         margin-bottom: 10px;
