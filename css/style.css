@@ -1,8 +1,8 @@
     * {
         -webkit-box-sizing: border-box;
-                box-sizing: border-box;
+        box-sizing: border-box;
     }
-    
+
     body {
         width: 100%;
         margin: auto;
@@ -12,9 +12,8 @@
         font-family: 'Raleway-Light';
         font-size: 1.15rem;
     }
-
     /*For Accessibility*/
-    
+
     .screen-reader-text {
         clip: rect(1px, 1px, 1px, 1px);
         position: absolute !important;
@@ -30,9 +29,9 @@
         left: 5px;
         top: 5px;
         width: auto;
-        z-index: 100000; /* above all content */
+        z-index: 100000;
+        /* above all content */
     }
-    
     /*Header Section */
 
     header {
@@ -40,24 +39,14 @@
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+        flex-wrap: wrap;
         position: fixed;
         width: 100%;
         background-color: white;
         z-index: 2;
-    }
-
-    @media screen and (min-width: 1240px) {
-        header {
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        margin-right: auto;
-        margin-left: auto;
-        }
     }
 
     .logo-pic {
@@ -65,22 +54,9 @@
         padding: 15px 0px 10px 20px;
     }
 
-    @media screen and (min-width: 1240px) {
-        .logo-pic {
-        max-width: 180px;
-        padding-top: 15px;
-        }
-    }
-
     header nav {
         display: inline;
         padding: 0px;
-    }
-
-    @media screen and (min-width: 600px) {
-        header nav {
-        padding: 15px 0px 10px 0px;
-        }
     }
 
     .section-names ul {
@@ -90,45 +66,19 @@
     }
 
     .section-names {
-            -webkit-box-ordinal-group: 4;
-                -ms-flex-order: 3;
-                    order: 3;
-            margin: 0 auto;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            width: 85%;
-            border-top: 1px solid #d7d7d7;
-            -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
-        }
-
-    @media screen and (min-width: 600px) {
-        .section-names {
-            -webkit-box-ordinal-group: 3;
-                -ms-flex-order: 2;
-                    order: 2;
-            width: 50%;
-            border-top: none;
-        }
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+        order: 3;
+        margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 85%;
+        border-top: 1px solid #d7d7d7;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
     }
-
-    @media screen and (min-width: 600px) {
-            .header {
-                -webkit-box-ordinal-group: 2;
-                    -ms-flex-order: 1;
-                        order: 1;
-            }
-        }
-
-    @media screen and (min-width: 600px) {
-            .cart {
-                -webkit-box-ordinal-group: 4;
-                    -ms-flex-order: 3;
-                        order: 3;
-            }
-        }
 
     .section-names ul li {
         margin: 1rem;
@@ -136,13 +86,6 @@
         color: #e2574c;
         font-family: 'Raleway-Medium';
         font-size: 14.4px;
-    }
-
-    @media screen and (min-width: 1240px) {
-        .section-names ul li {
-            font-size: 16px;
-            margin: 1.5rem;
-        }
     }
 
     a {
@@ -154,13 +97,6 @@
         height: 75px;
         padding: 15px 20px 10px 0px;
     }
-
-    @media screen and (min-width: 1240px) {
-            .cart img {
-                height: 90px;
-            }
-    }
-
     /*Banner and Overlay Text*/
 
     .banner {
@@ -171,18 +107,14 @@
         background-size: cover, 140px;
     }
 
-    @media screen and (min-width: 1240px) {
-        .banner {
-            height: 650px;
-            background-size: cover, 200px 475px, contain;
-        }
-    }
-
-    h1, h2, h3, h4, h5 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
         font-family: 'PlayfairDisplay-Regular';
         font-size: 60px;
     }
-
 
     h1 {
         color: white;
@@ -194,18 +126,6 @@
         font-family: 'Raleway-Medium';
     }
 
-        @media screen and (min-width: 600px) {
-            h2 {
-                font-size: 20px;
-            }
-        }
-
-        @media screen and (min-width: 1240px) {
-            h1 {
-                padding-top: 300px;
-            }
-        }
-
     h2 {
         color: white;
         font-size: 38px;
@@ -213,19 +133,6 @@
         padding: 25px 0px 100px 0px;
         text-shadow: 1px 2px 2px gray;
     }
-
-        @media screen and (min-width: 600px) {
-            h2 {
-                font-size: 48px;
-            }
-        }
-
-        @media screen and (min-width: 1240px) {
-            h2 {
-                font-size: 60px;
-            }
-        }
-
     /*Info section*/
 
     info {
@@ -240,12 +147,6 @@
         font-family: 'PlayfairDisplay-Italic';
     }
 
-    @media screen and (min-width: 600px) {
-        h3 {
-            font-size: 38px;
-        }
-    }
-
     .info h3 span {
         font-family: 'PlayfairDisplay-Bold';
         font-style: normal;
@@ -256,14 +157,6 @@
         font-size: 1rem;
         padding: 0px 20px 0px 20px;
     }
-
-    @media screen and (min-width: 600px) {
-        .info p {
-            font-size: 1.15rem;
-            padding: 0px;
-        }
-    }
-
     /*Product Section*/
 
     .products {
@@ -271,7 +164,7 @@
         display: -ms-flexbox;
         display: flex;
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+        flex-wrap: wrap;
     }
 
     .products span {
@@ -282,15 +175,9 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        -webkit-transform: translate(-50%,-50%);
-            -ms-transform: translate(-50%,-50%);
-                transform: translate(-50%,-50%);
-    }
-
-    @media screen and (min-width: 1240px) {
-        .products span {
-            font-size: 35px;
-        }
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     }
 
     .products div span a {
@@ -306,59 +193,42 @@
         position: relative;
         border: none;
     }
-
     /*Product Boxes*/
 
     .products div.mens {
         -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
+        flex-basis: 100%;
         border-left: 0px;
         margin-left: 0px;
-        background: -webkit-gradient(linear,left top, left bottom,color-stop(0, rgba(0,0,0,.25)),to(rgba(0,0,0,.25))),url("../images/mens-category.jpg") no-repeat 50%;
-        background: -webkit-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/mens-category.jpg") no-repeat 50%;
-        background: -o-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/mens-category.jpg") no-repeat 50%;
-        background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/mens-category.jpg") no-repeat 50%;
-        background-size: cover,cover;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, .25)), to(rgba(0, 0, 0, .25))), url("../images/mens-category.jpg") no-repeat 50%;
+        background: -webkit-linear-gradient(top, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url("../images/mens-category.jpg") no-repeat 50%;
+        background: -o-linear-gradient(top, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url("../images/mens-category.jpg") no-repeat 50%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url("../images/mens-category.jpg") no-repeat 50%;
+        background-size: cover, cover;
         border-bottom: 8px solid white;
-    }
-
-    @media screen and (min-width: 600px) {
-            .products div.mens {
-                -ms-flex-preferred-size: 50%;
-                    flex-basis: 50%;
-                border-bottom: 4px solid white;
-            }
     }
 
     .products div.trends {
         -ms-flex-preferred-size: 50%;
-            flex-basis: 50%;
-        background: -webkit-gradient(linear,left top, left bottom,color-stop(0, rgba(0,0,0,.25)),to(rgba(0,0,0,.25))),url("../images/trends-category.jpg") no-repeat 50%;
-        background: -webkit-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/trends-category.jpg") no-repeat 50%;
-        background: -o-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/trends-category.jpg") no-repeat 50%;
-        background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/trends-category.jpg") no-repeat 50%;
-        background-size: cover,cover;
+        flex-basis: 50%;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, .25)), to(rgba(0, 0, 0, .25))), url("../images/trends-category.jpg") no-repeat 50%;
+        background: -webkit-linear-gradient(top, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url("../images/trends-category.jpg") no-repeat 50%;
+        background: -o-linear-gradient(top, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url("../images/trends-category.jpg") no-repeat 50%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url("../images/trends-category.jpg") no-repeat 50%;
+        background-size: cover, cover;
         background-repeat: no-repeat;
         border-right: 4px solid white;
         border-bottom: 8px solid white;
     }
 
-    @media screen and (min-width: 600px) {
-            .products div.trends {
-                -ms-flex-preferred-size: 25%;
-                    flex-basis: 25%;
-                border-bottom: 4px solid white;
-            }
-    }
-
     .products div.glasses {
         -ms-flex-preferred-size: 50%;
-            flex-basis: 50%;
-        background: -webkit-gradient(linear,left top, left bottom,color-stop(0, rgba(0,0,0,.25)),to(rgba(0,0,0,.25))),url("../images/glasses-category.jpg") no-repeat 50%;
-        background: -webkit-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/glasses-category.jpg") no-repeat 50%;
-        background: -o-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/glasses-category.jpg") no-repeat 50%;
-        background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/glasses-category.jpg") no-repeat 50%;
-        background-size: cover,cover;
+        flex-basis: 50%;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, .25)), to(rgba(0, 0, 0, .25))), url("../images/glasses-category.jpg") no-repeat 50%;
+        background: -webkit-linear-gradient(top, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url("../images/glasses-category.jpg") no-repeat 50%;
+        background: -o-linear-gradient(top, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url("../images/glasses-category.jpg") no-repeat 50%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url("../images/glasses-category.jpg") no-repeat 50%;
+        background-size: cover, cover;
         background-repeat: no-repeat;
         border-right: 0px;
         margin-right: 0px;
@@ -366,22 +236,14 @@
         border-bottom: 8px solid white;
     }
 
-    @media screen and (min-width: 600px) {
-            .products div.glasses {
-                -ms-flex-preferred-size: 25%;
-                    flex-basis: 25%;
-                border-bottom: 4px solid white;
-            }
-    }
-
     .products div.sale {
         -ms-flex-preferred-size: 50%;
-            flex-basis: 50%;
-        background: -webkit-gradient(linear,left top, left bottom,color-stop(0, rgba(0,0,0,.25)),to(rgba(0,0,0,.25))),url("../images/sale-category.jpg") no-repeat 50%;
-        background: -webkit-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/sale-category.jpg") no-repeat 50%;
-        background: -o-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/sale-category.jpg") no-repeat 50%;
-        background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/sale-category.jpg") no-repeat 50%;
-        background-size: cover,cover;
+        flex-basis: 50%;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, .25)), to(rgba(0, 0, 0, .25))), url("../images/sale-category.jpg") no-repeat 50%;
+        background: -webkit-linear-gradient(top, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url("../images/sale-category.jpg") no-repeat 50%;
+        background: -o-linear-gradient(top, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url("../images/sale-category.jpg") no-repeat 50%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url("../images/sale-category.jpg") no-repeat 50%;
+        background-size: cover, cover;
         background-repeat: no-repeat;
         border-left: 0px;
         margin-left: 0px;
@@ -389,71 +251,42 @@
         border-bottom: 8px solid white;
     }
 
-    @media screen and (min-width: 600px) {
-            .products div.sale {
-                -ms-flex-preferred-size: 25%;
-                    flex-basis: 25%;
-            }
-    }
-
     .products div.bags {
         -ms-flex-preferred-size: 50%;
-            flex-basis: 50%;
-        background: -webkit-gradient(linear,left top, left bottom,color-stop(0, rgba(0,0,0,.25)),to(rgba(0,0,0,.25))),url("../images/bags-category.jpg") no-repeat 50%;
-        background: -webkit-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/bags-category.jpg") no-repeat 50%;
-        background: -o-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/bags-category.jpg") no-repeat 50%;
-        background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/bags-category.jpg") no-repeat 50%;
-        background-size: cover,cover;
+        flex-basis: 50%;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, .25)), to(rgba(0, 0, 0, .25))), url("../images/bags-category.jpg") no-repeat 50%;
+        background: -webkit-linear-gradient(top, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url("../images/bags-category.jpg") no-repeat 50%;
+        background: -o-linear-gradient(top, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url("../images/bags-category.jpg") no-repeat 50%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url("../images/bags-category.jpg") no-repeat 50%;
+        background-size: cover, cover;
         background-repeat: no-repeat;
         border-left: 4px solid white;
         border-bottom: 8px solid white;
     }
 
-    @media screen and (min-width: 600px) {
-            .products div.bags {
-                -ms-flex-preferred-size: 25%;
-                    flex-basis: 25%;
-            }
-    }
-
     .products div.womens {
         -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
-        background: -webkit-gradient(linear,left top, left bottom,color-stop(0, rgba(0,0,0,.25)),to(rgba(0,0,0,.25))),url("../images/womens-category.jpg") no-repeat 50% top;
-        background: -webkit-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/womens-category.jpg") no-repeat 50% top;
-        background: -o-linear-gradient(top,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/womens-category.jpg") no-repeat 50% top;
-        background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),url("../images/womens-category.jpg") no-repeat 50% top;
-        background-size: cover,cover;
+        flex-basis: 100%;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, .25)), to(rgba(0, 0, 0, .25))), url("../images/womens-category.jpg") no-repeat 50% top;
+        background: -webkit-linear-gradient(top, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url("../images/womens-category.jpg") no-repeat 50% top;
+        background: -o-linear-gradient(top, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url("../images/womens-category.jpg") no-repeat 50% top;
+        background: linear-gradient(180deg, rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url("../images/womens-category.jpg") no-repeat 50% top;
+        background-size: cover, cover;
         background-repeat: no-repeat;
         border-bottom: 8px solid white;
     }
-
-    @media screen and (min-width: 600px) {
-            .products div.womens {
-                -ms-flex-preferred-size: 50%;
-                    flex-basis: 50%;
-                border-right: 0px;
-                margin-right: 0px;
-            }
-    }
-
-    @media screen and (min-width: 600px) {
-        .products div {
-            border: 4px solid white;
-        }
-    }
-
     /* These two steps were the only way I could figure out how to resize the boxes correctly */
+
     .small-item:before {
         padding-top: 100%;
         content: '';
-        display:block;
+        display: block;
     }
 
     .big-item:before {
         padding-top: 50%;
         content: '';
-        display:block;
+        display: block;
     }
 
     .features {
@@ -477,7 +310,6 @@
         max-width: 720px;
         margin: 0 auto;
     }
-
     /*Carousel Settings */
 
     .clothes-info {
@@ -502,15 +334,14 @@
         padding-top: 20px;
         padding-bottom: 20px;
     }
-
     /*Newsletter Section*/
 
     .newsletter {
         height: 350px;
-        background: -webkit-gradient(linear,left top, left bottom,color-stop(0, rgba(0,0,0,.15)),to(rgba(0,0,0,.15))),url("../images/wave-bkgd.jpg") no-repeat bottom;
-        background: -webkit-linear-gradient(top,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)),url("../images/wave-bkgd.jpg") no-repeat bottom;
-        background: -o-linear-gradient(top,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)),url("../images/wave-bkgd.jpg") no-repeat bottom;
-        background: linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)),url("../images/wave-bkgd.jpg") no-repeat bottom;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, .15)), to(rgba(0, 0, 0, .15))), url("../images/wave-bkgd.jpg") no-repeat bottom;
+        background: -webkit-linear-gradient(top, rgba(0, 0, 0, .15) 0, rgba(0, 0, 0, .15)), url("../images/wave-bkgd.jpg") no-repeat bottom;
+        background: -o-linear-gradient(top, rgba(0, 0, 0, .15) 0, rgba(0, 0, 0, .15)), url("../images/wave-bkgd.jpg") no-repeat bottom;
+        background: linear-gradient(180deg, rgba(0, 0, 0, .15) 0, rgba(0, 0, 0, .15)), url("../images/wave-bkgd.jpg") no-repeat bottom;
         background-position: bottom;
         background-repeat: no-repeat;
         margin-bottom: 10px;
@@ -523,13 +354,6 @@
         padding-top: 60px;
         font-style: italic;
         text-shadow: 1px 2px 2px gray;
-    }
-
-    /* Added visibility for this section for devices under 500px */
-    @media screen and (max-width: 500px) {
-        .newsletter h5 {
-            padding-top: 30px;
-        }
     }
 
     .newsletter h5 span {
@@ -548,19 +372,7 @@
         line-height: 2;
         font-size: 16px;
     }
-
     /* Added visibility for this section for devices under 500px */
-    @media screen and (max-width: 500px) {
-        .newsletter p {
-            font-size: 15px;
-        }
-    }
-
-    @media screen and (min-width: 600px) {
-        .newsletter p {
-            font-size: 18px;
-        }
-    }
 
     .info p {
         max-width: 720px;
@@ -584,8 +396,9 @@
         font-size: 14px;
     }
 
-    textarea:focus, input:focus  {
-    outline: none;
+    textarea:focus,
+    input:focus {
+        outline: none;
     }
 
     .email {
@@ -598,7 +411,7 @@
         width: 120px;
         padding: 10px 10px;
         -webkit-box-sizing: border-box;
-                box-sizing: border-box;
+        box-sizing: border-box;
         background-color: #e2574c;
         border-radius: 50px 50px 50px 50px;
         position: absolute;
@@ -608,7 +421,6 @@
         color: white;
         font-family: 'Raleway-Medium';
     }
-
     /*Footer Section*/
 
     .footer {
@@ -618,84 +430,52 @@
         display: -ms-flexbox;
         display: flex;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         font-size: 16px;
         color: white;
         font-family: 'Raleway-Light';
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+        flex-wrap: wrap;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-    }
-
-    @media screen and (min-width: 600px) {
-        .footer {
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-flow: row;
-                flex-flow: row; 
-        }
+        -ms-flex-pack: center;
+        justify-content: center;
     }
 
     .phone a {
         color: white;
         line-height: 30px;
     }
-
     /*Left Half of Footer*/
 
     footer .left-footer {
-    padding-left: 2rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
+        padding-left: 2rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 3px;
-    padding-right: 2.8rem;
-    padding-top: 20px;
-    text-align: center;
-    line-height: 0.9;
-    }
-
-    @media screen and (min-width: 600px) {
-        footer .left-footer {
-            padding-top: 1rem;
-            text-align: left;
-            line-height: 1.5;
-        }
+        flex-direction: column;
+        margin: 3px;
+        padding-right: 2.8rem;
+        padding-top: 20px;
+        text-align: center;
+        line-height: 0.9;
     }
 
     .left-footer div {
-            line-height: 24px;
+        line-height: 24px;
     }
 
-    .copyright, .contact {
+    .copyright,
+    .contact {
         padding-bottom: 10px;
-    }
-
-    @media screen and (min-width: 600px) {
-        .copyright, .contact {
-            padding-bottom: 20px;
-        }
     }
 
     div.left-footer p {
         font-family: 'PlayfairDisplay-Regular';
         font-size: 14px;
-    }
-
-    @media screen and (min-width: 600px) {
-        div.left-footer p {
-            font-size: 16px;
-        }
     }
 
     .left-footer .address {
@@ -710,10 +490,9 @@
     .contact a:hover {
         color: #e2574c;
     }
-
     /*Right Half of Footer*/
 
-    .right-footer ul li{
+    .right-footer ul li {
         padding: 8px;
     }
 
@@ -727,29 +506,16 @@
 
     .right-footer ul span {
         font-weight: 600;
-                font-family: 'Raleway-Light';
+        font-family: 'Raleway-Light';
     }
 
     .right-footer ul li {
         display: inline-block;
     }
 
-    @media screen and (min-width: 600px) {
-        .right-footer ul li {
-            display: block;
-        }
-    }
-
-    @media screen and (max-width: 599px) {
-        .social span {
-            display: none;
-        }
-    }
-
     footer .right-footer {
         padding: 0rem 3rem 0rem 3rem;
     }
-
     /*Lining up social media icons */
 
     i.fa.fa-facebook span {
@@ -766,4 +532,150 @@
 
     i.fa.fa-google span {
         margin-left: 2px;
+    }
+    /*Support for Tablets/Devices > 600px */
+
+    @media screen and (min-width: 600px) {
+        .section-names {
+            -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+            order: 2;
+            width: 50%;
+            border-top: none;
+        }
+        .header {
+            -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+            order: 1;
+        }
+        .cart {
+            -webkit-box-ordinal-group: 4;
+            -ms-flex-order: 3;
+            order: 3;
+        }
+        header nav {
+            padding: 15px 0px 10px 0px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        h2 {
+            font-size: 48px;
+        }
+        h3 {
+            font-size: 38px;
+        }
+        .info p {
+            font-size: 1.15rem;
+            padding: 0px;
+        }
+        .products div.mens {
+            -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+            border-bottom: 4px solid white;
+        }
+        .products div.trends {
+            -ms-flex-preferred-size: 25%;
+            flex-basis: 25%;
+            border-bottom: 4px solid white;
+        }
+        .products div.glasses {
+            -ms-flex-preferred-size: 25%;
+            flex-basis: 25%;
+            border-bottom: 4px solid white;
+        }
+        .products div.sale {
+            -ms-flex-preferred-size: 25%;
+            flex-basis: 25%;
+        }
+        .products div.bags {
+            -ms-flex-preferred-size: 25%;
+            flex-basis: 25%;
+        }
+        .products div.womens {
+            -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+            border-right: 0px;
+            margin-right: 0px;
+        }
+        .products div {
+            border: 4px solid white;
+        }
+        .newsletter p {
+            font-size: 18px;
+        }
+        .footer {
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-flow: row;
+            flex-flow: row;
+        }
+        footer .left-footer {
+            padding-top: 1rem;
+            text-align: left;
+            line-height: 1.5;
+        }
+        .copyright,
+        .contact {
+            padding-bottom: 20px;
+        }
+        div.left-footer p {
+            font-size: 16px;
+        }
+        .right-footer ul li {
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 599px) {
+        .social span {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 1240px) {
+        header {
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .logo-pic {
+            max-width: 180px;
+            padding-top: 15px;
+        }
+        .section-names ul li {
+            font-size: 16px;
+            margin: 1.5rem;
+        }
+        .cart img {
+            height: 90px;
+        }
+        .banner {
+            height: 650px;
+            background-size: cover, 200px 475px, contain;
+        }
+        h1 {
+            padding-top: 300px;
+        }
+        h2 {
+            font-size: 60px;
+        }
+        .products span {
+            font-size: 35px;
+        }
+    }
+    /* Added visibility for this section for devices under 500px */
+
+    @media screen and (max-width: 500px) {
+        .newsletter h5 {
+            padding-top: 30px;
+        }
+        .newsletter p {
+            font-size: 15px;
+        }
     }
