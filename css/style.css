@@ -9,7 +9,8 @@
     }
 
     p {
-        font-family: 'Raleway-Light';
+        font-family: 'Raleway';
+        font-weight: 100;
         font-size: 1.15rem;
     }
     /*For Accessibility*/
@@ -84,7 +85,7 @@
         margin: 1rem;
         text-transform: uppercase;
         color: #e2574c;
-        font-family: 'Raleway-Medium';
+        font-family: 'Raleway';
         font-size: 14.4px;
     }
 
@@ -112,7 +113,7 @@
     h3,
     h4,
     h5 {
-        font-family: 'PlayfairDisplay-Regular';
+        font-family: 'PlayfairDisplay';
         font-size: 60px;
     }
 
@@ -123,7 +124,7 @@
         padding: 250px 0px 0px 0px;
         text-shadow: 1px 2px 2px gray;
         text-transform: uppercase;
-        font-family: 'Raleway-Medium';
+        font-family: 'Raleway';
     }
 
     h2 {
@@ -144,12 +145,14 @@
         text-align: center;
         font-style: italic;
         font-size: 30px;
-        font-family: 'PlayfairDisplay-Italic';
+        font-family: 'PlayfairDisplay';
+        font-style: italic;
     }
 
     .info h3 span {
-        font-family: 'PlayfairDisplay-Bold';
+        font-family: 'PlayfairDisplay';
         font-style: normal;
+        font-weight: 700;
     }
 
     .info p {
@@ -169,7 +172,7 @@
 
     .products span {
         color: white;
-        font-family: 'Raleway-Medium';
+        font-family: 'Raleway';
         font-size: 28.8px;
         text-transform: uppercase;
         position: absolute;
@@ -298,12 +301,14 @@
         padding: 20px 0px 50px 0px;
         text-align: center;
         font-size: 38px;
-        font-family: 'PlayfairDisplay-Italic';
+        font-family: 'PlayfairDisplay';
+        font-style: italic;
     }
 
     .features h4 span {
-        font-family: 'PlayfairDisplay-Bold';
+        font-family: 'PlayfairDisplay';
         font-style: normal;
+        font-weight: 700;
     }
 
     .wrapper-container {
@@ -318,7 +323,7 @@
 
     .clothes-info p {
         color: gray;
-        font-family: 'Raleway-Medium';
+        font-family: 'Raleway';
         font-size: 14px;
         text-transform: uppercase;
     }
@@ -328,7 +333,7 @@
     }
 
     h6 {
-        font-family: 'PlayfairDisplay-Regular';
+        font-family: 'PlayfairDisplay';
         color: #e2574c;
         font-size: 24px;
         padding-top: 20px;
@@ -357,7 +362,8 @@
     }
 
     .newsletter h5 span {
-        font-family: 'PlayfairDisplay-Bold';
+        font-family: 'PlayfairDisplay';
+        font-weight: 700;
         font-style: normal;
     }
 
@@ -392,7 +398,8 @@
 
     input {
         border: 0;
-        font-family: 'Raleway-Light';
+        font-family: 'Raleway';
+        font-weight: 100;
         font-size: 14px;
     }
 
@@ -419,7 +426,7 @@
         right: 4px;
         font-size: 16px;
         color: white;
-        font-family: 'Raleway-Medium';
+        font-family: 'Raleway';
     }
     /*Footer Section*/
 
@@ -434,7 +441,8 @@
         align-items: center;
         font-size: 16px;
         color: white;
-        font-family: 'Raleway-Light';
+        font-family: 'Raleway';
+        font-weight: 100;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         -webkit-box-pack: center;
@@ -474,7 +482,7 @@
     }
 
     div.left-footer p {
-        font-family: 'PlayfairDisplay-Regular';
+        font-family: 'PlayfairDisplay';
         font-size: 14px;
     }
 
@@ -505,8 +513,7 @@
     }
 
     .right-footer ul span {
-        font-weight: 600;
-        font-family: 'Raleway-Light';
+        font-family: 'Raleway';
     }
 
     .right-footer ul li {
@@ -565,6 +572,11 @@
         h3 {
             font-size: 38px;
         }
+
+        .info {
+            margin-bottom: 3rem;
+        }
+
         .info p {
             font-size: 1.15rem;
             padding: 0px;
