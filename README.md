@@ -1,4 +1,4 @@
-![Aloha](https://drive.google.com/file/d/0B2Erzf8_d1DpOUp2X2JXRGg4Z3M/view?usp=sharing)
+![Aloha Frontpage](https://lh6.googleusercontent.com/Sap4mO0SZbSTrrFrTx64PILL0PNRRm_HeKvJT3k7ufoRpIyqyLunxFEuRAmoTrmD7110UtxerPV6rpY=w2590-h1450-rw)
 
 # Aloha Apparel Co. Homepage
 
