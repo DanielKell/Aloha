@@ -1,3 +1,5 @@
+![Aloha](https://drive.google.com/file/d/0B2Erzf8_d1DpOUp2X2JXRGg4Z3M/view?usp=sharing)
+
 # Aloha Apparel Co. Homepage
 
 The goal of this project was to create a storefront homepage for the clothing company Aloha Apparel Co.
